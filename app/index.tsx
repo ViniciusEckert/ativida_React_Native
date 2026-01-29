@@ -24,13 +24,13 @@ export default function HomePage() {
       <Header image={require("@/assets/images/camisa1.png")} />
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <View style={s.body}>
-          <Text style={s.title}>Camisa</Text>
-          <Text style={s.price}>R$59,99</Text>
+          <Text style={s.title}>NAPOLI</Text>
+          <Text style={s.price}>VERDADE</Text>
         </View>
         <View style={s.body2}>
           <Image
             style={s.shirt}
-            source={require("../assets/images/camisa.png")}
+            source={require("../assets/images/escudo.png")}
           />
         </View>
         <View style={s.body2}>
@@ -38,7 +38,7 @@ export default function HomePage() {
             <Text style={s.btnText}>Compre ja</Text>
           </TouchableOpacity>
           <TouchableOpacity style={s.btn1} onPress={visit1}>
-            compre denovo
+            <Text style={s.btnText}>compre denovo</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
