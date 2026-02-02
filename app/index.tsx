@@ -1,4 +1,3 @@
-import { Header } from "@/components/header";
 import { router } from "expo-router";
 import {
   Image,
@@ -16,29 +15,28 @@ export default function HomePage() {
   };
 
   const visit1 = () => {
-    router.push("/apiList");
+    router.push("/list2");
   };
 
   return (
     <SafeAreaView style={s.wrap}>
-      <Header image={require("@/assets/images/camisa1.png")} />
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <View style={s.body}>
-          <Text style={s.title}>NAPOLI</Text>
-          <Text style={s.price}>VERDADE</Text>
+          <Text style={s.title}>NAPOLI E GRÊMIO</Text>
+          <Text style={s.price}>CAMISAS</Text>
         </View>
         <View style={s.body2}>
           <Image
             style={s.shirt}
-            source={require("../assets/images/escudo.png")}
+            source={require("../assets/images/escudoDuplo.png")}
           />
         </View>
         <View style={s.body2}>
           <TouchableOpacity style={s.btn} onPress={visit}>
-            <Text style={s.btnText}>Compre ja</Text>
+            <Text style={s.btnText}>Compre Napoli</Text>
           </TouchableOpacity>
           <TouchableOpacity style={s.btn1} onPress={visit1}>
-            <Text style={s.btnText}>compre denovo</Text>
+            <Text style={s.btnText}>compre Grêmio</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -57,6 +55,7 @@ const s = StyleSheet.create({
   body2: {
     alignItems: "center",
     padding: 10,
+    gap: 20,
   },
   btnText: {
     color: "#000000",

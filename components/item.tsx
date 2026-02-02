@@ -19,6 +19,24 @@ export const Item = ({
   );
 };
 
+export const ItemG = ({
+  camisa,
+  temporada,
+  imagem,
+}: {
+  camisa: string;
+  temporada: string;
+  imagem: string;
+}) => {
+  return (
+    <View style={s.itemList}>
+      <Image style={s.imageStyle} source={imagem} />
+      <Text style={s.txt}>{camisa}</Text>
+      <Text style={s.txt2}>{temporada}</Text>
+    </View>
+  );
+};
+
 const s = StyleSheet.create({
   itemList: {
     display: "flex",

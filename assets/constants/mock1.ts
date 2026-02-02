@@ -8,7 +8,7 @@ const data = [
   {
     id: "2",
     camisa: "Segunda camisa",
-    Temporada: "Temporada de 2027",
+    Temporada: "Temporada de 2017",
     imagem: require("@/assets/images/Gcamisa2.png"),
   },
   {
